@@ -78,4 +78,27 @@ __ISO__ | __Shutter Speed__ | __Aperature__ | __Result__
 
 ### Stops:
 
-As you may have noticed, each seemingly increment doubles or halves the brightness (approximately), and this can be known as a 'stop'. I will have a graph below with all of the possible stops:
+As you may have noticed, each seemingly increment doubles or halves the brightness (approximately), and this can be known as a 'stop'. I will have a graph below with all of the possible stops: __(Note: This graph goes from least bright to most bright, from bottom to top)__
+
+
+__ISO__ | __Shutter Speed__ | __Aperature__
+--------|-------------------|--------------
+6400 | 1/30s   | f/2.0
+3200 | 1/60s   | f/2.8
+1600 | 1/125s  | f/4.0
+800  | 1/250s  | f/5.6
+400  | 1/500s  | f/8.0
+200  | 1/1000s | f/11
+100  | 1/2000s | f/16
+50   | 1/4000s | f/22
+
+For you to have the same amount of brightness, all movements from the baseline have to equal out (e.g. ISO decreasing by 3 stops, Shutter Speed decreasing by 1 stop and Aperature increasing by 4 stops)
+
+<br>
+
+### Shot Types:
+
+* Sports Shot __(Faster Shutter Speed required)__
+  * __Example__: Decrease Shutter Speed by 2 stops (from 1/1000s to 1/4000s), increase ISO by 1 stop (from ISO 800 to ISO 1600) and increase aperature by 1 stop (f/8.0 to f/5.6)
+* Portrait __(Larger Aperature is required)__
+  * __Example__: Increase the Aperture by 4 stops (from f/8.0 to f/2.0), Decrease the ISO by 4 stops (from ISO 800 to ISO 50) and keep the Shutter Speed (1/1000s)
