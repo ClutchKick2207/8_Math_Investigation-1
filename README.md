@@ -31,4 +31,5 @@ The Shutter speed is the amount of time that the ISO can have light for. Shutter
 
 Controls the amount of light that the sensor recieves. (**Note that the larger the f-stop number, the smaller the aperature**). Aperature is inversely proportional to the amount of light in an image (i.e. **Decreasing the f-stop by a factor of &radic;2&asymp;1.4 will double the brightness in the image.**)
 
-* The higher the Aperature the dimmer the image
+* The higher the Aperature the dimmer the image (is inversely proportional)
+* The lower the Aperature 
