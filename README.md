@@ -10,6 +10,11 @@ Input for other 2 prefered settings | *__Pending__*
 Check if output is too dark/bright | *__Pending__*
 Logic uses 'Modified Sunny 16 Rule' | *__Pending__*
 Output: Lighting Condition, Selected Settings, Recommended Settings | *__Pending__*
+Automatic Mode: Asking for lighting and mode (portrait/sport) | *__Possible__*
+Semi-Automatic: Ask for one preferred setting, output other 2 | *__Possible__*
+Error-Checking | *__Pending__*
+Summarise lighting condition, mode and settings | *__Possible__*
+Be uploaded and viewable/interactable on https://groklearning.com/ | *__Pending__*
 
 
 ## Definitions/Knowledge:
@@ -102,3 +107,17 @@ For you to have the same amount of brightness, all movements from the baseline h
   * __Example__: Decrease Shutter Speed by 2 stops (from 1/1000s to 1/4000s), increase ISO by 1 stop (from ISO 800 to ISO 1600) and increase aperature by 1 stop (f/8.0 to f/5.6)
 * Portrait __(Larger Aperature is required)__
   * __Example__: Increase the Aperture by 4 stops (from f/8.0 to f/2.0), Decrease the ISO by 4 stops (from ISO 800 to ISO 50) and keep the Shutter Speed (1/1000s)
+
+<br>
+
+### Lighting Conditions/Camera Settings Table:
+__Reference No.__ | __Lighting Condition__ | __ISO__ | __Shutter Speed__ | __Aperture__
+------------------|------------------------|---------|-------------------|-------------
+__8__ | Default | 6400 | 1/30s | f/2.0
+__7__ | Snow/Sand | 3200 | 1/60s | f/2.8 |
+__6__ | Sunny | 1600 | 1/125s | f/4.0 |
+__5__ | Lightly Cloudy | 800 | 1/250s | f/5.6
+__4__ | Cloudy | 400 | 1/500s | f/8.0
+__3__ | Overcast | 200 | 1/1000s | f/11
+__2__ | Sunset/Shade | 100 | 1/2000s | f/16
+__1__ | Dusk | 50 | 1/4000s | f/22
