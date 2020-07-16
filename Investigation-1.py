@@ -15,6 +15,7 @@ xxx = ""
 yyy = ""
 calculation1 = ""
 calculation2 = ""
+setting = ""
 
 #Default/Baseline values for lighting conditions
 listy = [["Dusk", "50", "1/4000s", "f/22"], ["Sunset/Shade", "100", "1/2000s", "f/16"], ["Overcast", "200", "1/1000s", "f/11"], ["Cloudy", "400", "1/500s", "f/8.0"], ["Lightly Cloudy", "800", "1/250s", "f/5.6"], ["Sunny", "1600", "1/125s", "f/4.0"], ["Snow/Sand", "3200", "1/60s", "f/2.8"], ["Default", "6400", "1/30s", "f/2.0"]]
@@ -94,6 +95,12 @@ if funky == "Suggest ISO":
     if ap != 2.0 and ap != 2.8 and ap != 4.0 and ap != 5.6 and ap != 8.0 and ap != 11.0 and ap != 16.0 and ap != 22.0:
       print("Please only enter the number present (e.g. 2.0 instead of f/2.0)")
     print(f"You entered {ap}")
+
+  while setting != "Portrait" and setting != "Sport" and setting != "None":
+    setting = str(input('Please enter the setting that you wish to use (Portrait, Sport or None): '))
+    if setting != "Portrait" and setting != "Sport" and setting != "None":
+      print("Please enter a valid input")
+    print(f"You entered {setting}")
 
   n = str(light)
   x = int((dictionary[n]))
