@@ -2,7 +2,7 @@ import time
 
 time.sleep(0.1) #Allows for some look-ahead into code for linting (more for the programmer)
 
-#Setting all variables to an intial state (because cache)
+#Setting all variables to an intial state (because cache, adn it is good practice to initialise a variable before use)
 light = ""
 funky = ""
 function = ""
