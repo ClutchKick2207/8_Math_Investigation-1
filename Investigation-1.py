@@ -109,8 +109,24 @@ if funky == "Suggest ISO":
 
 
   #This is the main 'logic' towards the program:
-  if ap == y[-1] and ss == y[2]:
+  if ap == m[-1] and ss == m[2] and setting == "None":
     print(f'Your current settings match the stored baseline, so I would recommend you use {y[1]} as your ISO.')
+    print("\n")
+    print("Final Values:")
+    time.sleep(1)
+    print(f"Your lighting conditions: {light}")
+    time.sleep(1)
+    print(f"Final Aperature: {y[-1]}")
+    time.sleep(1)
+    print(f"Final Shutter-Speed: {y[2]}")
+    time.sleep(1)
+    print(f"Final ISO: {y[1]}")
+    time.sleep(1)
+    print("\n")
+    print('Thank you for using this program, and enjoy your photography!')
+    time.sleep(6)
+    exit()
+
     time.sleep(1)
   else:
     print('The program will now calculate what setting you should use for your ISO...')
