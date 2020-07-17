@@ -113,26 +113,25 @@ if funky == "Suggest ISO":
     print(f'Your current settings match the stored baseline, so I would recommend you use {y[1]} as your ISO.')
     print("\n")
     print("Final Values:")
-    time.sleep(1)
+    time.sleep(3)
     print(f"Your lighting conditions: {light}")
-    time.sleep(1)
+    time.sleep(3)
     print(f"Final Aperature: {y[-1]}")
-    time.sleep(1)
+    time.sleep(3)
     print(f"Final Shutter-Speed: {y[2]}")
-    time.sleep(1)
+    time.sleep(3)
     print(f"Final ISO: {y[1]}")
-    time.sleep(1)
+    time.sleep(3)
     print("\n")
     print('Thank you for using this program, and enjoy your photography!')
     time.sleep(6)
     exit()
 
-    time.sleep(1)
   else:
-    print('The program will now calculate what setting you should use for your ISO...')
-    calculation1 = m[-1]
-    calculation2 = m[2]
-    
+    print('There seems to be an error in the process, please restart the program, and retry your inputs.')
+    time.sleep(3)
+    print('This program will now exit...')
+    exit()
 
   restart = input("Do you want for this program to repeat? (Y/N): ")
   if restart == 'N':
