@@ -4,9 +4,9 @@
 
 __Requirement/Feature__ | __Status__
 ------------ | -------------
-Input for lighting condition | *__Pending__*
-Input for setting to be recommended | *__Pending__*
-Input for other 2 prefered settings | *__Pending__*
+Input for lighting condition | *__Finished__*
+Input for setting to be recommended | *__Finished__*
+Input for other 2 prefered settings | *__Finished__*
 Check if output is too dark/bright | *__Pending__*
 Logic uses 'Modified Sunny 16 Rule' | *__Pending__*
 Output: Lighting Condition, Selected Settings, Recommended Settings | *__Pending__*
