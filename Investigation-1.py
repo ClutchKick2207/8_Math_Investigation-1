@@ -31,14 +31,13 @@ stops_SS = {4000: 1, 2000: 2, 1000: 3, 500: 4, 250: 5, 125: 6, 60: 7, 30: 8}
 
 
 #Code Begins:
-if restart == False:
-  while funky != "Suggest All" and funky != "Suggest ISO" and funky != "Suggest Aperature" and funky != "Suggest Shutter-Speed" and funky != "Check my values":
-    print("Please enter the function that you would like this program to run (between Suggest All, Suggest ISO, Suggest Aperature and Suggest Shutter-Speed):")
-    funky = input('What function do you choose?: ')
-    if funky != "Suggest All" and funky != "Suggest ISO" and funky != "Suggest Aperature" and funky != "Suggest Shutter-Speed" and funky != "Check my values":
-      print('That input seems to be invalid, please try again!')
-    print(f"You entered: {funky}")
-    time.sleep(2)
+while funky != "Suggest All" and funky != "Suggest ISO" and funky != "Suggest Aperature" and funky != "Suggest Shutter-Speed" and funky != "Check my values":
+  print("Please enter the function that you would like this program to run (between Suggest All, Suggest ISO, Suggest Aperature and Suggest Shutter-Speed):")
+  funky = input('What function do you choose?: ')
+  if funky != "Suggest All" and funky != "Suggest ISO" and funky != "Suggest Aperature" and funky != "Suggest Shutter-Speed" and funky != "Check my values":
+    print('That input seems to be invalid, please try again!')
+  print(f"You entered: {funky}")
+  time.sleep(2)
 
 
 
@@ -102,10 +101,12 @@ if funky == "Suggest ISO":
       print("Please enter a valid input")
     print(f"You entered {setting}")
 
+  #Algorith to find which list the information is in for the baseline, and keeps that as a variable (I have both the string version and also one with integers)
   n = str(light)
   x = int((dictionary[n]))
   y = (listy[x])
   m = (listyv2[x])
+
 
 
   #This is the main 'logic' towards the program:
@@ -126,22 +127,8 @@ if funky == "Suggest ISO":
     print('Thank you for using this program, and enjoy your photography!')
     time.sleep(6)
     exit()
-
   else:
-    print('There seems to be an error in the process, please restart the program, and retry your inputs.')
+    print('There seems to be an error in the process, please restart the program, and retry your inputs')
     time.sleep(3)
     print('This program will now exit...')
     exit()
-
-  restart = input("Do you want for this program to repeat? (Y/N): ")
-  if restart == 'N':
-    print("Goodbye, and take some good photos!")
-    time.sleep(5)
-    restart = True
-    exit()
-  if restart == 'Y':
-    print('Program is going to continue')
-    print("\n")
-    print("\n")
-    time.sleep(2)
-    restart = False
