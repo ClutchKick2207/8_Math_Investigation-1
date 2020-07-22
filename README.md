@@ -8,7 +8,7 @@ Input for lighting condition | *__Finished__*
 Input for setting to be recommended | *__Finished__*
 Input for other 2 prefered settings | *__Finished__*
 Check if output is too dark/bright | *__Pending__*
-Logic uses 'Modified Sunny 16 Rule' | *__Pending__*
+Logic uses 'Modified Sunny 16 Rule' | *__Finished__*
 Output: Lighting Condition, Selected Settings, Recommended Settings | *__Pending__*
 Automatic Mode: Asking for lighting and mode (portrait/sport) | *__Possible__*
 Semi-Automatic: Ask for one preferred setting, output other 2 | *__Possible__*
