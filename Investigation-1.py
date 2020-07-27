@@ -2,7 +2,7 @@ import time
 
 time.sleep(0.1) #Something that I like to do
 
-#Setting all variables to an intial state (because cache, adn it is good practice to initialise a variable before use)
+#Setting all variables to an intial state (because cache, and it is good practice to initialise a variable before use)
 light = ""
 funky = ""
 function = ""
