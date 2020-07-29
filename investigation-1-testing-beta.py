@@ -46,7 +46,7 @@ preset = {
     }}
 
 print('Welcome to this Software.')
-print()
+print('\n')
 
 def restart():
 
@@ -201,48 +201,48 @@ def restart():
         - 1/60s
         ''') #keep indenting from here
         shutterspeed = input('Please enter your Shutter Speed: ')
-      while shutterspeed not in data:
-        shutterspeed = input('Please enter your Shutter Speed: ')
-      print()
-      print('Your selected options are: ')
-      print('Lighting: ',l)
-      print('ISO: ',iso)
-      print('Shutter Speed: ',shutterspeed)
-      print()
-      isoindex = data.index(iso)
-      isor = isoindex - 2
-      isoref = data[isor]
-      shutterspeedindex = data.index(shutterspeed)
-      shutterspeedr = shutterspeedindex - 3
-      shutterspeedref = data[shutterspeedr]
-      refsum = isoref + shutterspeedref + lightingref
-      if refsum >= 16:
-        decreasen = refsum - 16
-        print('Too Bright! Please decrease some of your settings by',decreasen,'stops.')
-      else:
-        apertureref = 16 - refsum
-        aperturerefindex = data.index(apertureref)
-        apertureindex = aperturerefindex + 4
-        print('The recommended Aperture is: ',data[apertureindex])
-        print('Thank-You for using this program.')
+        while shutterspeed not in data:
+          shutterspeed = input('Please enter your Shutter Speed: ')
+        print()
+        print('Your selected options are: ')
+        print('Lighting: ',l)
+        print('ISO: ',iso)
+        print('Shutter Speed: ',shutterspeed)
+        print()
+        isoindex = data.index(iso)
+        isor = isoindex - 2
+        isoref = data[isor]
+        shutterspeedindex = data.index(shutterspeed)
+        shutterspeedr = shutterspeedindex - 3
+        shutterspeedref = data[shutterspeedr]
+        refsum = isoref + shutterspeedref + lightingref
+        if refsum >= 16:
+          decreasen = refsum - 16
+          print('Too Bright! Please decrease some of your settings by',decreasen,'stops.')
+        else:
+          apertureref = 16 - refsum
+          aperturerefindex = data.index(apertureref)
+          apertureindex = aperturerefindex + 4
+          print('The recommended Aperture is: ',data[apertureindex])
+          print('Thank-You for using this program.')
 
-  if 'p' in mode or 'P' in mode:
-    print('Lighting Conditions include:')
-    print('''
-     - Dusk
-     - Sunset/Shade
-     - Overcast
-     - Cloudy
-     - Lightly Cloudy
-     - Sunny
-     - Snow/Sand''')
-    l = input('In which lighting condition is your shot?  ')
-    for i in preset:
-      if i == l:
-        print('The preset for that lighting condition is: ')
-        print(preset[l])
-    y = iteration + 1
-    iteration = y
+    if 'p' in mode or 'P' in mode:
+      print('Lighting Conditions include:')
+      print('''
+       - Dusk
+       - Sunset/Shade
+       - Overcast
+       - Cloudy
+       - Lightly Cloudy
+       - Sunny
+       - Snow/Sand''')
+      l = input('In which lighting condition is your shot?  ')
+      for i in preset:
+        if i == l:
+          print('The preset for that lighting condition is: ')
+          print(preset[l])
+      y = iteration + 1
+      iteration = y
 
 restart()
 
