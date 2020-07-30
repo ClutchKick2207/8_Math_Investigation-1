@@ -1,5 +1,5 @@
 import time
-
+iteration = 0
 
 data = [1, 'Dusk', 50, '1/4000s', 'f/22', 2, 'Sunset/Shade', 100, '1/2000s', 'f/16', 3, 'Overcast', 200, '1/1000s', 'f/11', 4, 'Cloudy', 400, '1/500s', 'f/8.0', 5, 'Lightly Cloudy', 800, '1/250s', 'f/5.6', 6, 'Sunny', 1600, '1/125s', 'f/4.0', 7, 'Snow/Sand', 3200, '1/60s', 'f/2.8']
 
