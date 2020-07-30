@@ -1,12 +1,32 @@
 import time
+import datetime
+currentTime = datetime.datetime.now()
 iteration = 0
 
 data = [1, 'Dusk', 50, '1/4000s', 'f/22', 2, 'Sunset/Shade', 100, '1/2000s', 'f/16', 3, 'Overcast', 200, '1/1000s', 'f/11', 4, 'Cloudy', 400, '1/500s', 'f/8.0', 5, 'Lightly Cloudy', 800, '1/250s', 'f/5.6', 6, 'Sunny', 1600, '1/125s', 'f/4.0', 7, 'Snow/Sand', 3200, '1/60s', 'f/2.8']
 
 preset = {'Snow/Sand': {'ISO' : 3200, 'SS' : '1/60s', 'A' : 'f/2.8'}, 'Sunny' : {'ISO' : 1600, 'SS' : '1/125s', 'A' : 'f/4.0'}, 'Lightly Cloudy' : { 'ISO' : 800, 'SS' : '1/250s', 'A' : 'f/5.6'}, 'Cloudy' : {'ISO' : 400, 'SS' : '1/500s', 'A' : 'f/8.0'}, 'Overcast' : {'ISO' : 200, 'SS' : '1/1000s', 'A' : 'f/11'}, 'Sunset' : {'ISO' : 100, 'SS' : '1/2000s', 'A' : 'f/16'}, 'Shade' : {'ISO' : 100, 'SS' : '1/2000s', 'A' : 'f/16'}, 'Dusk' : {'ISO' : 50, 'SS' : '1/4000s', 'A' : 'f/22'}}
 
-print('Welcome to this Software.')
-print('\n')
+if currentTime.hour < 12:
+  print('\n')
+  print('\n')
+  print('Good Morning!')
+  time.sleep(5)
+  print('Please follow the listed instructions to use this program.')
+elif 12 <= currentTime.hour < 18:
+  print('\n')
+  print('\n')
+  print('Good Afternoon!')
+  time.sleep(5)
+  print('Please follow the listed instructions to use this program.')
+else:
+  print('\n')
+  print('\n')
+  print('Good Evening!')
+  time.sleep(5)
+  print('Please follow the listed instructions to use this program.')
+
+time.sleep(5)
 
 def restart():
 
