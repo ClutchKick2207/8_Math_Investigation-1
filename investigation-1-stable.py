@@ -1,5 +1,6 @@
 import time
 import datetime
+#initialising 'Global Variables'
 currentTime = datetime.datetime.now()
 iteration = 0
 
@@ -29,25 +30,25 @@ else:
 time.sleep(5)
 
 def restart():
-
+  #Initialising variables for the process 'restart'
+    l = ""
+    s = ""
+    
     mode = input('Which mode would like to use? [Suggest a Preset (p) //Recommend a Setting (r): ')
 
     if 'r' in mode or 'R' in mode:
-        print('Lighting Conditions include:')
-        print('''
-        - Dusk
-        - Sunset/Shade
-        - Overcast
-        - Cloudy
-        - Lightly Cloudy
-        - Sunny
-        - Snow/Sand
-        ''')
-        l = input('In which lighting condition is your shot?  ')
+      while l != "Dusk" and l != "Sunset/Shade" and l != "Overcast" and l != "Cloudy" and l != "Lightly Cloudy" and l != "Sunny" and l != "Snow/Sand" and l != "Default":
+        print('Please enter the lighting condition [Dusk, Sunset/Shade, Overcast, Cloudy, Lightly Cloudy, Sunny, Snow/Sand]:')
+        l = input('Please enter the lighting condition: ')
+        if l != "Dusk" and l != "Sunset/Shade" and l != "Overcast" and l != "Cloudy" and l != "Lightly Cloudy" and l != "Sunny" and l != "Snow/Sand" and l != "Default":
+          print('Your input seems to be invalid (Please type exactly as it is written)')
         lightingindex = data.index(l)
         lr = lightingindex - 1
         lightingref = data[lr]
-        s = input('Which setting would like us to recommend [ISO, Shutter Speed (ss), Aperture (a)]? ')
+        while s != 'ISO' and s != 'ss' and s != 'a':
+          s = input('Which setting  recommend [ISO [ISO], Shutter Speed (ss), Aperture (a)]? ')
+          if s != 'ISO' and s != 'ss' and s != 'a':
+              print('Your input seems to be invalid (Please type exactly as it is written)')
         s = s.lower()
 
   #SHUTTER SPEED_________________
