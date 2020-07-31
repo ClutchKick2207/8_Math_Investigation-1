@@ -33,7 +33,9 @@ def restart():
   #Initialising variables for the process 'restart'
     l = ""
     s = ""
-    
+    iso = ""
+    aperature = ""
+
     mode = input('Which mode would like to use? [Suggest a Preset (p) //Recommend a Setting (r): ')
 
     if 'r' in mode or 'R' in mode:
@@ -50,58 +52,44 @@ def restart():
           if s != 'ISO' and s != 'ss' and s != 'a':
               print('Your input seems to be invalid (Please type exactly as it is written)')
         s = s.lower()
+        print('\n')
 
   #SHUTTER SPEED_________________
     if 'ss' in s or 'SS' in s or 'shutter' in s or 'Shutter' in s:
-        print('ISO settings include: ')
-        print('''
-        - 3200
-        - 1600
-        - 800
-        - 400
-        - 200
-        - 100
-        - 50
-        ''')
+      while iso != 3200 and iso != 1600 and iso != 800 and iso != 400 and iso != 200 and iso != 100 and iso != 50:
+        print('Please enter the ISO [3200, 1600, 800, 400, 200, 100, 50]: ')
         iso = int(input('Please enter your ISO: '))
         while iso not in data:
           iso = int(input('Please enter your ISO: '))
-        print()
-        print('Aperture Settings include: ')
-        print('''
-        - f/22
-        - f/16
-        - f/11
-        - f/8.0
-        - f/5.6
-        - f/4.0
-        - f/2.8
-        ''')
+          print('\n')
+      print('\n')
+      while aperature != 'f/22' and aperature != 'f/16' and aperature != 'f/8.0' and aperature != 'f/5.6' and aperature != 'f/4.0' and aperature != 'f/2.8':
+        print('Please enter the Aperature [f/22, f/16, f/11, f/8.0, f/5.6, f/4.0, f/2.8]: ')
         aperture = input('Please enter your Aperture (with "f/"): ')
         while aperture not in data:
             aperture = input('Please enter your Aperture (with "f/"): ')
-            print()
-        print('Your selected options are: ')
-        print('Lighting: ',l)
-        print('ISO: ',iso)
-        print('Aperture: ',aperture)
-        print()
-        isoindex = data.index(iso)
-        isor = isoindex - 2
-        isoref = data[isor]
-        apertureindex = data.index(aperture)
-        aperturer = apertureindex - 4
-        apertureref = data[aperturer]
-        refsum = apertureref + isoref + lightingref
-        if refsum >= 16:
-            decreasen = refsum - 16
-            print('Too Bright! Please decrease some of your settings by',decreasen,'stops.')
-        else:
-            shutterref = 16 - refsum
-            shutterrefindex = data.index(shutterref)
-            shutterindex = shutterrefindex + 3
-        print('The recommended Shutter Speed is: ',data[shutterindex])
-        print('Thank-You for using this program.')
+            print('\n')
+      print('Your selected options are: ')
+      print('Lighting: ',l)
+      print('ISO: ',iso)
+      print('Aperture: ',aperture)
+      print('\n')
+      isoindex = data.index(iso)
+      isor = isoindex - 2
+      isoref = data[isor]
+      apertureindex = data.index(aperture)
+      aperturer = apertureindex - 4
+      apertureref = data[aperturer]
+      refsum = apertureref + isoref + lightingref
+      if refsum >= 16:
+          decreasen = refsum - 16
+          print('Too Bright! Please decrease some of your settings by',decreasen,'stops.')
+      else:
+          shutterref = 16 - refsum
+          shutterrefindex = data.index(shutterref)
+          shutterindex = shutterrefindex + 3
+      print('The recommended Shutter Speed is: ',data[shutterindex])
+      print('Thank-You for using this program.')
 
   #ISO_________________
     if 'iso' in s:
