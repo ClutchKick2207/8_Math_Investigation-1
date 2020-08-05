@@ -160,15 +160,7 @@ def restart():
           print('Thank-You for using this program.')
 
     if 'p' in mode or 'P' in mode:
-      print('Lighting Conditions include:')
-      print('''
-       - Dusk
-       - Sunset/Shade
-       - Overcast
-       - Cloudy
-       - Lightly Cloudy
-       - Sunny
-       - Snow/Sand''')
+      print('Please enter your lighting condition [Dusk, Sunset/Shade, Overcast, Cloudy, Lightly Cloudy, Sunny, Snow/Sand]:')
       l = input('In which lighting condition is your shot?  ')
       for i in preset:
         if i == l:
@@ -184,10 +176,10 @@ if iteration >= 1:
     if 'y' in restart or 'Y' in restart:
         restart()
     if 'n' in restart or 'N' in restart:
-        print('Thank-You for using this program.')
+        print('Thanks for using this program!')
         exit()
     else:
-        print('Your input was not recognised.')
+        print('Please try running the program again')
         exit()
 
 
