@@ -171,16 +171,7 @@ def restart():
 
 restart()
 
-if iteration >= 1:
-    restart = input('Would you like to restart the program [y/n]? ')
-    if 'y' in restart or 'Y' in restart:
-        restart()
-    if 'n' in restart or 'N' in restart:
-        print('Thanks for using this program!')
-        exit()
-    else:
-        print('Please try running the program again')
-        exit()
+
 
 
 
