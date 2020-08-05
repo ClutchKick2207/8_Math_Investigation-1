@@ -54,7 +54,7 @@ def restart():
         s = s.lower()
         print('\n')
 
-  #SHUTTER SPEED_________________
+  #SHUTTER SPEED
     if 'ss' in s or 'SS' in s or 'shutter' in s or 'Shutter' in s:
       while iso != 3200 and iso != 1600 and iso != 800 and iso != 400 and iso != 200 and iso != 100 and iso != 50:
         print('Please enter the ISO [3200, 1600, 800, 400, 200, 100, 50]: ')
@@ -91,7 +91,7 @@ def restart():
       print('The recommended Shutter Speed is: ',data[shutterindex])
       print('Thank-You for using this program.')
 
-  #ISO_________________
+  #ISO
     if 'iso' in s:
         print('Please enter your aperature [f/22, f/16, f/11, f/8.0, f/5.6, f/4.0, f/2.8]: ')
         aperture = input('Please enter your Aperture (with "f/"): ')
@@ -125,7 +125,7 @@ def restart():
             print('The recommended ISO is: ',data[isoindex])
             print('Thank-You for using this program.')
 
-    #APERTURE_________________
+    #APERTURE
     if 'a' in s or 'A' in s or 'Aperture' in s or 'aperture' in s:
         print('Please enter your ISO [3200, 1600, 800, 400, 200, 100, 50]: ')
         iso = int(input('Please enter your ISO: '))
