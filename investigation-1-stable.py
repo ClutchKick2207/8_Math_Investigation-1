@@ -93,30 +93,12 @@ def restart():
 
   #ISO_________________
     if 'iso' in s:
-        print('Aperture Settings include: ')
-        print('''
-        - f/22
-        - f/16
-        - f/11
-        - f/8.0
-        - f/5.6
-        - f/4.0
-        - f/2.8
-        ''')
+        print('Please enter your aperature [f/22, f/16, f/11, f/8.0, f/5.6, f/4.0, f/2.8]: ')
         aperture = input('Please enter your Aperture (with "f/"): ')
         while aperture not in data:
             aperture = input('Please enter your Aperture (with "f/"): ')
         print()
-        print('Shutter Speeds include: ')
-        print('''
-        - 1/4000s
-        - 1/2000s
-        - 1/1000s
-        - 1/500s
-        - 1/250s
-        - 1/125s
-        - 1/60s
-        ''')
+        print('Please enter your shutter-speed [1/4000s, 1/2000s, 1/1000s, 1/500s, 1/250s, 1/125s, 1/60s]: ')
         shutterspeed = input('Please enter your Shutter Speed: ')
         while shutterspeed not in data:
             shutterspeed = input('Please enter your Shutter Speed: ')
@@ -145,30 +127,12 @@ def restart():
 
     #APERTURE_________________
     if 'a' in s or 'A' in s or 'Aperture' in s or 'aperture' in s:
-        print('ISO settings include: ')
-        print('''
-        - 3200
-        - 1600
-        - 800
-        - 400
-        - 200
-        - 100
-        - 50
-        ''')
+        print('Please enter your ISO [3200, 1600, 800, 400, 200, 100, 50]: ')
         iso = int(input('Please enter your ISO: '))
         while iso not in data:
           iso = int(input('Please enter your ISO: '))
         print()
-        print('Shutter Speeds include: ')
-        print('''
-        - 1/4000s
-        - 1/2000s
-        - 1/1000s
-        - 1/500s
-        - 1/250s
-        - 1/125s
-        - 1/60s
-        ''') #keep indenting from here
+        print('Please enter your shutter-speed [1/4000s, 1/2000s, 1/1000s, 1/500s, 1/250s, 1/125s, 1/60s]: ')
         shutterspeed = input('Please enter your Shutter Speed: ')
         while shutterspeed not in data:
           shutterspeed = input('Please enter your Shutter Speed: ')
