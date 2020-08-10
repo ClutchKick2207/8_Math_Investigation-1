@@ -82,8 +82,11 @@ def restart():
       apertureref = data[aperturer]
       refsum = apertureref + isoref + lightingref
       if refsum >= 16:
-          decreasen = refsum - 16
-          print('Too Bright! Please decrease some of your settings by',decreasen,'stops.')
+        decreasen = refsum - 16
+        print('Too Bright! Please decrease some of your settings by',decreasen,'stops.')
+      elif refsum <= 16:
+        decreasen = refsum - 16
+        print(f'Too Dark! Please increase some of your settings by {decreasen} stops.')
       else:
           shutterref = 16 - refsum
           shutterrefindex = data.index(shutterref)
