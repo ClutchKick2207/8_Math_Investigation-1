@@ -65,10 +65,10 @@ def restart():
       print('\n')
       while aperature != 'f/22' and aperature != 'f/16' and aperature != 'f/8.0' and aperature != 'f/5.6' and aperature != 'f/4.0' and aperature != 'f/2.8':
         print('Please enter the Aperature [f/22, f/16, f/11, f/8.0, f/5.6, f/4.0, f/2.8]: ')
-        aperture = input('Please enter your Aperture (with "f/"): ')
+        aperature = str(input('Please enter your Aperture (with "f/"): '))
         while aperture not in data:
-            aperture = input('Please enter your Aperture (with "f/"): ')
-            print('\n')
+            aperture = str(input('Please enter your Aperture (with "f/"): '))
+      print('\n')
       print('Your selected options are: ')
       print('Lighting: ',l)
       print('ISO: ',iso)
@@ -164,13 +164,14 @@ def restart():
 
     if 'p' in mode or 'P' in mode:
       print('Please enter your lighting condition [Dusk, Sunset/Shade, Overcast, Cloudy, Lightly Cloudy, Sunny, Snow/Sand]:')
-      l = input('In which lighting condition is your shot?  ')
+      while l != 'Dusk' and l != 'Sunset/Shade' and l != 'Overcast' and l != 'Cloudy' and l != 'Lightly Cloudy' and l != 'Sunny' and l != 'Snow/Sand':
+        l = input('In which lighting condition is your shot? ')
+        if l != 'Dusk' and l != 'Sunset/Shade' and l != 'Overcast' and l != 'Cloudy' and l != 'Lightly Cloudy' and l != 'Sunny' and l != 'Snow/Sand':
+          print('Please try again: ')
       for i in preset:
         if i == l:
           print('The preset for that lighting condition is: ')
           print(preset[l])
-      y = iteration + 1
-      iteration = y
 
 restart()
 
