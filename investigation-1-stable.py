@@ -174,12 +174,3 @@ def restart():
           print(preset[l])
 
 restart()
-
-
-
-
-
-
-
-
-
