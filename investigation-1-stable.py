@@ -145,10 +145,10 @@ def restart():
           shutterspeed = input('Please enter your Shutter Speed: ')
         print()
         print('Your selected options are: ')
-        print('Lighting: ',l)
-        print('ISO: ',iso)
-        print('Shutter Speed: ',shutterspeed)
-        print()
+        print(f'Lighting: {l}')
+        print(f'ISO: {iso}')
+        print(f'Shutter Speed: {shutterspeed}')
+        print('\n')
         isoindex = data.index(iso)
         isor = isoindex - 2
         isoref = data[isor]
@@ -158,7 +158,7 @@ def restart():
         refsum = isoref + shutterspeedref + lightingref
         if refsum >= 16:
           decreasen = refsum - 16
-          print('Too Bright! Please decrease some of your settings by',decreasen,'stops.')
+          print(f'Too Bright! Please decrease some of your settings by {decreasen} stops.')
         elif refsum <= 16:
           decreasen = refsum - 16
           print(f'Too Dark! Please increase some of your settings by {decreasen} stops.')
