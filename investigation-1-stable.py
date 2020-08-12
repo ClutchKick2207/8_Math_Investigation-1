@@ -35,6 +35,7 @@ def restart():
     s = ""
     iso = ""
     aperature = ""
+    shutterindex = 0
 
     mode = input('Which mode would like to use? [Suggest a Preset (p) //Recommend a Setting (r): ')
 
@@ -66,18 +67,18 @@ def restart():
       while aperature != 'f/22' and aperature != 'f/16' and aperature != 'f/8.0' and aperature != 'f/5.6' and aperature != 'f/4.0' and aperature != 'f/2.8':
         print('Please enter the Aperature [f/22, f/16, f/11, f/8.0, f/5.6, f/4.0, f/2.8]: ')
         aperature = str(input('Please enter your Aperture (with "f/"): '))
-        while aperture not in data:
-            aperture = str(input('Please enter your Aperture (with "f/"): '))
+        while aperature not in data:
+            aperature = str(input('Please enter your Aperture (with "f/"): '))
       print('\n')
       print('Your selected options are: ')
       print('Lighting: ',l)
       print('ISO: ',iso)
-      print('Aperture: ',aperture)
+      print('Aperture: ',aperature)
       print('\n')
       isoindex = data.index(iso)
       isor = isoindex - 2
       isoref = data[isor]
-      apertureindex = data.index(aperture)
+      apertureindex = data.index(aperature)
       aperturer = apertureindex - 4
       apertureref = data[aperturer]
       refsum = apertureref + isoref + lightingref
@@ -119,8 +120,11 @@ def restart():
         shutterspeedref = data[shutterspeedr]
         refsum = apertureref + shutterspeedref + lightingref
         if refsum >= 16:
-            decreasen = refsum - 16
-            print('Too Bright! Please decrease some of your settings by',decreasen,'stops.')
+          decreasen = refsum - 16
+          print('Too Bright! Please decrease some of your settings by',decreasen,'stops.')
+        elif refsum <= 16:
+          decreasen = refsum - 16
+          print(f'Too Dark! Please increase some of your settings by {decreasen} stops.')
         else:
             isoref = 16 - refsum
             isorefindex = data.index(isoref)
@@ -155,6 +159,9 @@ def restart():
         if refsum >= 16:
           decreasen = refsum - 16
           print('Too Bright! Please decrease some of your settings by',decreasen,'stops.')
+        elif refsum <= 16:
+          decreasen = refsum - 16
+          print(f'Too Dark! Please increase some of your settings by {decreasen} stops.')
         else:
           apertureref = 16 - refsum
           aperturerefindex = data.index(apertureref)
