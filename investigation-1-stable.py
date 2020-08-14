@@ -42,8 +42,10 @@ def restart():
     iso = ""
     aperature = ""
     shutterindex = 0
-
-    mode = input('Which mode would like to use? [Suggest a Preset (p) || Recommend a Setting (r)]: ')
+    while mode != 'p' and mode != 'r':
+      mode = input('Which mode would like to use? [Suggest a Preset (p) || Recommend a Setting (r)]: ')
+      if mode != 'p' and mode != 'r':
+        print('Please try again')
     time.sleep(2)
 
     if 'r' in mode or 'R' in mode:
