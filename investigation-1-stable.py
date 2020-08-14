@@ -41,6 +41,8 @@ def restart():
     s = ""
     iso = ""
     aperature = ""
+    mode = ""
+    shutterspeed = ""
     shutterindex = 0
     while mode != 'p' and mode != 'r':
       mode = input('Which mode would like to use? [Suggest a Preset (p) || Recommend a Setting (r)]: ')
@@ -127,9 +129,9 @@ def restart():
 
         while shutterspeed != '1/4000s' and shutterspeed != '1/2000s' and shutterspeed != '1/1000s' and shutterspeed != '1/500s' and shutterspeed != '1/250s' and shutterspeed != '1/125s' and shutterspeed != '1/60s':
           print('Please enter your shutter-speed [1/4000s, 1/2000s, 1/1000s, 1/500s, 1/250s, 1/125s, 1/60s]: ')
-          iso = int(input('Please enter your Shutter Speed: '))
-          while iso not in data:
-            iso = int(input('Please enter your Shutter Speed: '))
+          shutterspeed = input('Please enter your Shutter Speed: ')
+          while shutterspeed not in data:
+            shutterspeed = input('Please enter your Shutter Speed: ')
             print('\n')
         time.sleep(2)
 
@@ -180,9 +182,9 @@ def restart():
 
         while shutterspeed != '1/4000s' and shutterspeed != '1/2000s' and shutterspeed != '1/1000s' and shutterspeed != '1/500s' and shutterspeed != '1/250s' and shutterspeed != '1/125s' and shutterspeed != '1/60s':
           print('Please enter your shutter-speed [1/4000s, 1/2000s, 1/1000s, 1/500s, 1/250s, 1/125s, 1/60s]: ')
-          iso = int(input('Please enter your Shutter Speed: '))
-          while iso not in data:
-            iso = int(input('Please enter your Shutter Speed: '))
+          shutterspeed = input('Please enter your Shutter Speed: ')
+          while shutterspeed not in data:
+            shutterspeed = input('Please enter your Shutter Speed: ')
             print('\n')
 
         time.sleep(2)
