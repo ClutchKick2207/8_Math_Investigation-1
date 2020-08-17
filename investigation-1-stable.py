@@ -105,9 +105,13 @@ def restart():
       if refsum >= 16:
         decreasen = refsum - 16
         print(f'Too Bright! Please decrease some of your settings by {decreasen} stops.')
+        time.sleep(0.5)
+        print('Please try again with different values (wait till the program finishes)')
       elif refsum <= 16:
         decreasen = refsum - 16
         print(f'Too Dark! Please increase some of your settings by {decreasen} stops.')
+        time.sleep(0.5)
+        print('Please try again with different values (wait till the program finishes)')
       else:
           shutterref = 16 - refsum
           shutterrefindex = data.index(shutterref)
@@ -157,9 +161,13 @@ def restart():
         if refsum >= 16:
           decreasen = refsum - 16
           print('Too Bright! Please decrease some of your settings by',decreasen,'stops.')
+          time.sleep(0.5)
+          print('Please try again with different values (wait till the program finishes)')
         elif refsum <= 16:
           decreasen = refsum - 16
           print(f'Too Dark! Please increase some of your settings by {decreasen} stops.')
+          time.sleep(0.5)
+          print('Please try again with different values (wait till the program finishes)')
         else:
             isoref = 16 - refsum
             isorefindex = data.index(isoref)
@@ -210,9 +218,13 @@ def restart():
         if refsum >= 16:
           decreasen = refsum - 16
           print(f'Too Bright! Please decrease some of your settings by {decreasen} stops.')
+          time.sleep(0.5)
+          print('Please try again with different values (wait till the program finishes)')
         elif refsum <= 16:
           decreasen = refsum - 16
           print(f'Too Dark! Please increase some of your settings by {decreasen} stops.')
+          time.sleep(0.5)
+          print('Please try again with different values (wait till the program finishes)')
         else:
           apertureref = 16 - refsum
           aperturerefindex = data.index(apertureref)
