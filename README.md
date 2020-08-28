@@ -7,14 +7,13 @@ __Requirement/Feature__ | __Status__
 Input for lighting condition | *__Finished__*
 Input for setting to be recommended | *__Finished__*
 Input for other 2 prefered settings | *__Finished__*
-Check if output is too dark/bright | *__Pending__*
+Check if output is too dark/bright | *__Finished__*
 Logic uses 'Modified Sunny 16 Rule' | *__Finished__*
-Output: Lighting Condition, Selected Settings, Recommended Settings | *__Pending__*
-Automatic Mode: Asking for lighting and mode (portrait/sport) | *__Possible__*
-Semi-Automatic: Ask for one preferred setting, output other 2 | *__Possible__*
-Error-Checking | *__Pending__*
-Summarise lighting condition, mode and settings | *__Possible__*
-Be uploaded and viewable/interactable on https://groklearning.com/ | *__Pending__*
+Output: Lighting Condition, Selected Settings, Recommended Settings | *__Finished__*
+Automatic Mode: Asking for lighting and mode (portrait/sport) | *__Not-Doing__*
+Semi-Automatic: Ask for one preferred setting, output other 2 | *__Not-Doing__*
+Error-Checking | *__Finished__*
+Summarise lighting condition, mode and settings | *__Not-Doing__*
 
 
 ## Definitions/Knowledge:
