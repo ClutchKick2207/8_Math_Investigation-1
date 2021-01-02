@@ -15,6 +15,11 @@ Semi-Automatic: Ask for one preferred setting, output other 2 | *__Not-Doing__*
 Error-Checking | *__Finished__*
 Summarise lighting condition, mode and settings | *__Not-Doing__*
 
+## Installation/Use:
+
+### Instructions:
+
+To use this program, you can either download the .py file and run it using Python (this was written using Python 3, and any deriverative should work with this [e.g. 3.7, 3.8]). If you find this code useful in any way, please feel free to star the repo and share with friends, a follow would also be appreciated.
 
 ## Definitions/Knowledge:
 
